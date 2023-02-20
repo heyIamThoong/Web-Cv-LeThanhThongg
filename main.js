@@ -9,5 +9,5 @@ router.on("/",()=>render(HomePage,app));
 router.on("admin/projectListAdmin",()=>render(ProjectListAdmin,app));
 router.on("/admin/projectAddAdmin", ()=>render(projectAddAdmin, app));
 router.on("/admin/projectEditAdmin/:id", ({data})=> render(()=>projectEditAdmin(data),app));
-router.on("/admin/login", ()=>render(Login, app));
+router.on("#/admin/login", ()=>render(Login, app));
 router.resolve(); 
