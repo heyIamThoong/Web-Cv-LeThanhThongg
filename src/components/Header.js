@@ -1,5 +1,5 @@
 import menu from "../data/ index"
-
+import Navigo from "navigo"
 const Header = () => {
   return `
   <header class="tf-header"  >
@@ -9,6 +9,7 @@ const Header = () => {
           <div id="navbar">
             <ul class="nav pull-right">
             ${menu?.map((index) => ` <li  class="nav-item"><a data-navigo class="nav-link" id="nav" href="${index.link}">${index.name}</a></li>`).join("")}
+            <li class="nav-item"><a data-navigo class="nav-link" id="nav" href="/admin/login">Admin</a></li>
             </ul>
           </div>
         </div>
