@@ -8,7 +8,7 @@ const Header = () => {
           <h1><a class="navbar-brand" href="/">dev<span style="color : #FF3333">lethanhthong</span></a></h1>
           <div id="navbar">
             <ul class="nav pull-right">
-            ${menu?.map((index) => ` <li  class="nav-item"><a class="nav-link" id="nav" href="${index.link}">${index.name}</a></li>`).join("")}
+            ${menu?.map((index) => ` <li  class="nav-item"><a data-navigo class="nav-link" id="nav" href="${index.link}">${index.name}</a></li>`).join("")}
             </ul>
           </div>
         </div>
