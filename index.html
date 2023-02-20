@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start Simple</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+<style>
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #ddd;
+        color: #333;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      button , .chan{
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+      a.anek {
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      a.anek:hover {
+        background-color: #27ae60;
+      }
+      #nav:hover{
+        color: orangered !important;
+      }
+
+/* style cho tiêu đề */
+.add {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* style cho các input field */
+.form input[type="text"],
+.form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form input[type="text"]:focus,
+.form input[type="file"]:focus {
+  border-bottom: 2px solid #f75023;
+}
+
+/* style cho nút submit */
+.form input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f75023;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #e24c21;
+}
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .login-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-input:focus {
+    border-color: #ff9800;
+  }
+  
+  .login-btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #f57c00;
+  }
+  
+  .login-bottom-text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .signup-link {
+    color: #ff9800;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link:hover {
+    color: #f57c00;
+  }
+  
+</style>
+    <noscript>
+
+    </noscript>
+   
+   
+  </head>
+  <body id="top"> 
+    <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="scripts/parallax.min.js?ver=1.2.0"></script>
+    <script src="scripts/main.js?ver=1.2.0"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="text/javascript">
+      function confirm_delete() {
+        
+        return confirm('Delete?');
+      }
+      </script>
+  </body>
+</html>
