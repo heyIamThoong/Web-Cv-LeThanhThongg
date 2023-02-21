@@ -45,7 +45,7 @@ const projectListAdmin = ()=>{
             <td>${item.describe}</td>
             <td>
             <button onclick="return confirm_delete()" data-id=${item.id} class="bg-red-600 p-2 py-2 text-[#ffff] btn_delete">DELETE</button>
-            <a class="chan" href="/admin/projectEditAdmin/${item.id}" class="bg-blue-900 p-5 py-2 text-[#ffff]">SETTING</a>
+            <a class="chan" href="#/admin/projectEditAdmin/${item.id}" class="bg-blue-900 p-5 py-2 text-[#ffff]">SETTING</a>
             </td>
         </tr>
         `
