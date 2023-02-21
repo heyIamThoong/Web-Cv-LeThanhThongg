@@ -13,11 +13,10 @@ const Header = () => {
           <h1><a class="navbar-brand" href="/">dev<span style="color : #FF3333">lethanhthong</span></a></h1>
           <div id="navbar">
             <ul class="nav pull-right">
-            <li  class="nav-item"><a class="nav-link" id="nav" href="#Home">Home</a></li>
+            <li  class="nav-item"><a  class="nav-link" id="nav" href="#Home">Home</a></li>
             <li  class="nav-item"><a class="nav-link" id="nav" href="#project">Home</a></li>
             <li  class="nav-item"><a class="nav-link" id="nav" href="#contact">Home</a></li>
-            <li  class="nav-item"><a class="nav-link" id="nav" href="#/admin/login">Home</a></li>
-
+            <li  class="nav-item"><a data-navigo class="nav-link" id="nav" href="/admin/login">Home</a></li>
             </ul>
           </div>
         </div>
