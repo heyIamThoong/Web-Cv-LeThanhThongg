@@ -24,9 +24,7 @@ const login = () => {
             for (const item of users) {
                 if (item.name == username.value && item.password == password.value) {
                     router.navigate("admin/projectListAdmin");
-                } else {
-                    alert("mật khẩu hoặc tài khoản không đúng");
-                }
+                } 
             }
         })
     })
@@ -42,7 +40,7 @@ const login = () => {
     <button type="submit" class="login-btn">Log In</button>
     <div class="login-bottom-text">
       <span>Don't have an account?</span>
-      <a href="#" class="signup-link">Sign up</a>
+      <a href="/admin/sigin" class="signup-link">Sign up</a>
     </div>
   </div>
   </form>

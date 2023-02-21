@@ -1,5 +1,4 @@
 import axios from "axios";
-import { header } from "server/reply";
 import { router, useEffect } from "../lib"
 
 const projectAddAdmin = () => {
@@ -55,7 +54,7 @@ const projectAddAdmin = () => {
   return `
     <div class="conteiner">
         <h2 class="add">ADD PROJECT</h2>
-        <a class="anek" href="projectListAdmin">LIST</a>
+        <a class="anek" href="admin/projectListAdmin">LIST</a>
         <a class="anek" href="/">HOME</a> 
         <br> <br> <br>
         <form id="form" class="form" action="">
