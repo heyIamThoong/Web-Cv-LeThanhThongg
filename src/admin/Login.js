@@ -24,7 +24,10 @@ const login = () => {
             for (const item of users) {
                 if (item.name == username.value && item.password == password.value) {
                     router.navigate("admin/projectListAdmin");
-                } 
+                } else {
+                    alert("Đăng Nhập không thành công")
+                    break;
+                }
             }
         })
     })
