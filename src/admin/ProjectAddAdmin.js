@@ -54,7 +54,7 @@ const projectAddAdmin = () => {
   return `
     <div class="conteiner">
         <h2 class="add">ADD PROJECT</h2>
-        <a class="anek" href="admin/projectListAdmin">LIST</a>
+        <a class="anek" href="#/admin/projectListAdmin">LIST</a>
         <a class="anek" href="/">HOME</a> 
         <br> <br> <br>
         <form id="form" class="form" action="">

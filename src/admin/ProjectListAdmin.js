@@ -23,7 +23,7 @@ const projectListAdmin = ()=>{
     return `
     <div class="conteiner">
     <h2 class="my">MY PROJECT</h2>
-    <a class="anek" href="/admin/projectAddAdmin">ADD</a>
+    <a class="anek" href="#/admin/projectAddAdmin">ADD</a>
     <a class="anek" href="/">HOME</a>
     <table class="tb">
         <tr>
