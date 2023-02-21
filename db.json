@@ -79,31 +79,9 @@
       "email": "thongltph2000@gmail.com",
       "message": "AAA",
       "id": 2
-    },
-    {
-      "name": "admin",
-      "email": "thongltph2000@gmail.com",
-      "message": "abc",
-      "id": 3
-    },
-    {
-      "name": "admin",
-      "email": "thongltph2000@gmail.com",
-      "message": "abc",
-      "id": 4
-    },
-    {
-      "name": "admin",
-      "email": "thongltph2000@gmail.com",
-      "message": "abc",
-      "id": 5
-    },
-    {
-      "name": "admin",
-      "email": "ac@xn--e-kia",
-      "message": "â",
-      "id": 6
     }
+   
+    
   ],
   "users": [
     {
