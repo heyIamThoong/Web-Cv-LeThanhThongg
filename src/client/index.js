@@ -28,8 +28,8 @@ const HomePage = () => {
       <div>
       <div class="introduction">
        
-<div class="tf-work-section">
-  <div class="container" id="project">
+<div id="project" class="tf-work-section">
+  <div class="container" >
     <h2 class="h3" class="col-blue">List ProJect</h2>
   </div>
   <div class="container">

@@ -8,7 +8,7 @@ const Header = () => {
   }, [])
   return `
   <header class="tf-header"  >
-      <nav style= "background-color :	#454545 ;  " class="navbar py- navbar-dark">
+      <nav style= "background-color :	#454545 ; position : fixed ; width :100% ; z-index: 2;" class="navbar py- navbar-dark">
         <div class="container">
           <h1><a class="navbar-brand" href="/">dev<span style="color : #FF3333">lethanhthong</span></a></h1>
           <div id="navbar">
@@ -17,7 +17,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav><br><br>
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-11">

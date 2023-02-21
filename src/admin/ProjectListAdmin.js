@@ -30,6 +30,7 @@ const projectListAdmin = ()=>{
             <td style="width: 100px;">STT</td>
             <td style="width: 250px;">NAME PROJECT</td>
             <td style="width: 150px;">DATE</td>
+            <td style="width: 150px;">LANGUAGE</td>
             <td style="width: 300px;">IMAGES</td>
             <td style="width: 300px;">ACTION</td>
         </tr>
@@ -39,6 +40,7 @@ const projectListAdmin = ()=>{
             <td>${index+1}</td>
             <td>${item.name}</td>
             <td>${item.date}</td>
+            <td>${item.language}</td>
             <td><img style="width : 180px" class="img-fluid card-img-top" src="${item.gallery}" alt="2-start-simple"/></td>
             <td>${item.describe}</td>
             <td>
