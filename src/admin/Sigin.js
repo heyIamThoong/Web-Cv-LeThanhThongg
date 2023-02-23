@@ -35,7 +35,7 @@ const Sigin = () => {
         <button type="submit" class="register-btn">Register</button>
         <div class="register-bottom-text">
         <span>Already have an account?</span>
-        <a href="#admin/login" class="login-link">Log in</a>
+        <a href="#/admin/login" class="login-link">Log in</a>
         </div>
      </div>
     </form>
