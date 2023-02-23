@@ -1,5 +1,7 @@
 import axios from "axios";
+import Footer from "../components/Footer";
 import { useEffect, useState } from "../lib"
+import MenuAdmin from "./MenuAdmin";
 
 const projectListAdmin = ()=>{
     const [projects, setProject] = useState([]);
@@ -21,10 +23,10 @@ const projectListAdmin = ()=>{
         }
     })
     return `
-    <div class="conteiner">
-    <h2 class="my">MY PROJECT</h2>
+    ${MenuAdmin()}
+    <br><br><br><br>
+    <h2 class="my" style="text-align : center">MY PROJECT</h2>
     <a class="anek" href="#/admin/projectAddAdmin">ADD</a>
-    <a class="anek" href="/">HOME</a>
     <table class="tb">
         <tr>
             <td style="width: 100px;">STT</td>
@@ -51,7 +53,8 @@ const projectListAdmin = ()=>{
         `
       }).join("")}
     </table>
-</div>`
+
+${Footer()}`
 }
 export default projectListAdmin
 

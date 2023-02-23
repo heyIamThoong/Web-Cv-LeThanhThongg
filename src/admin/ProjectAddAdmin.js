@@ -1,5 +1,8 @@
 import axios from "axios";
+import Footer from "../components/Footer";
+import Menu from "../components/Menu";
 import { router, useEffect } from "../lib"
+import MenuAdmin from "./MenuAdmin";
 
 const projectAddAdmin = () => {
   useEffect(function () {
@@ -52,10 +55,10 @@ const projectAddAdmin = () => {
 
   }
   return `
+  ${MenuAdmin()}<br><br><br>
     <div class="conteiner">
         <h2 class="add">ADD PROJECT</h2>
         <a class="anek" href="#/admin/projectListAdmin">LIST</a>
-        <a class="anek" href="/">HOME</a> 
         <br> <br> <br>
         <form id="form" class="form" action="">
             <div>
@@ -66,7 +69,7 @@ const projectAddAdmin = () => {
             <div>
                 <label for="">Date</label>
                 <br>
-                <input id="date"  type="text">
+                <input id="date"  type="date">
             </div>
             <div>
                 <label for="">Language Use</label>
@@ -96,6 +99,7 @@ const projectAddAdmin = () => {
         </form><br><br>
         
     </div>
+    ${Footer()}
   `
 }
 export default projectAddAdmin

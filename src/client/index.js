@@ -7,6 +7,10 @@ import Footer from "../components/Footer";
 const HomePage = () => {
 
   const [project, setProject] = useState([]);
+  const [information, setinformation] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:3000/information").then(({ data }) => setinformation(data))
+  }, [])
   useEffect(() => {
     axios.get("http://localhost:3000/APIproject").then(({ data }) => setProject(data))
   }, [])
@@ -27,7 +31,7 @@ const HomePage = () => {
     <div class="page-content">  
       <div>
       <div class="introduction">
-       
+       <hr>
 <div id="project" class="tf-work-section">
   <div class="container" >
     <h2 class="h3" class="col-blue">List ProJect</h2>
@@ -36,8 +40,9 @@ const HomePage = () => {
     <div class="row">
     ${project.map(function (item) {
     return `
-      <div class="col-md-2 col-sm-12 pt-2">
-        <div class="card"><img style="width :200px" class="img-fluid card-img-top" src="${item.gallery}" alt="2-start-simple"/>
+      <div class="col-md-3 col-sm-12 pt-2">
+        <div class="card">
+        <a href="#/projectInformation/${item.id}"><img  class="img-fluid card-img-top" src="${item.gallery}" alt="2-start-simple"/></a>
           <div class="card-body">
             <h5 class="">${item.name}</h5>
             <p class="text-muted">${item.language}</p>
@@ -50,36 +55,7 @@ const HomePage = () => {
     </div>
   </div>
 </div>
-<div class="tf-quotes-section">
-  <div class="carousel slide mt-5" id="tf-carousel" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li class="active" data-target="#tf-carousel" data-slide-to="0"></li>
-      <li data-target="#tf-carousel" data-slide-to="1"></li>
-      <li data-target="#tf-carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('${a.gallery}');">
-        <div class="carousel-caption">
-          <p class="slider-text-1">""Những người phát triển web tốt luôn tập trung vào trải nghiệm người dùng đầu tiên của mình!"</p>
-          <p class="slider-text-2">Walter George<br>CEO, Founder of Gupply</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('${b.gallery}');">
-        <div class="carousel-caption">
-          <p class="slider-text-1">""Nếu bạn không có thể tạo ra một giao diện người dùng tốt, bạn sẽ không bao giờ trở thành một nhà phát triển web giỏi."
-          "</p>
-          <p class="slider-text-2">Nancy Young<br>Managing Director, Amazingly</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('${c.gallery}');">
-        <div class="carousel-caption">
-          <p class="slider-text-1">"Một trang web tốt phải trông giống như một trang web tốt và hoạt động giống như một trang web tốt."</p>
-          <p class="slider-text-2">Glenn Harrold<br>Marketing Manager</p>
-        </div>
-      </div>
-    </div><a class="carousel-control-prev" href="#tf-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#tf-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-  </div>
-</div>
+<hr>
 <div class="tf-contact-section">
   <div class="container" id="contact">
     <h2 class="h4">Contact Me</h2>
@@ -91,14 +67,16 @@ const HomePage = () => {
         ${Contact()}
       </div>
       <div class="col-md-6 col-sm-12 float-right text-right">
-        <h3 class="h5">Address</h3><span>Thanh Xuân Hà Nội</span>
-        <p></p>
-        <h3 class="h5">Phone</h3>
-        <span>0359210703</span><br> <br>
-        <h3 class="h5">Email</h3>
-        <span>thongltph20702@fpt.edu.vn</span><br> <br>
-        <h3 class="h5">Facebook</h3>
-        <a href="https://www.facebook.com/thoongne.210703">https://www.facebook.com/thoongne.210703</a>
+       ${information.map((information) => `
+       <h3 class="h5">Address</h3><span>${information.address}</span>
+       <p></p>
+       <h3 class="h5">Phone</h3>
+       <span>${information.phone}</span><br> <br>
+       <h3 class="h5">Email</h3>
+       <span>${information.email}</span><br> <br>
+       <h3 class="h5">Facebook</h3>
+       <a href="${information.facebook}">https://www.facebook.com/thoongne.210703</a>  
+       `)}
       </div>
     </div>
   </div>

@@ -2,6 +2,7 @@ import axios from "axios";
 import { router, useEffect } from "../lib"
 
 const Contact = ()=>{
+  
   useEffect(function(){
     const form = document.querySelector("#formcontact");
     const nameContact = document.querySelector("#name");
@@ -23,7 +24,7 @@ const Contact = ()=>{
     })
   })
     return `
-    <form action="https://formspree.io/youremail@example.com" id="formcontact" >
+    <form action="" id="formcontact" >
     <div class="row no-gutters">
       <div class="col-lg-6 col-md-12 col-sm-12 tf-contact-col">
         <input class="bg-light form-control" type="text" name="name" placeholder="*Name" id="name" required="required"/>

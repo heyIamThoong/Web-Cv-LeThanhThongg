@@ -1,47 +1,44 @@
 import { useEffect , router } from "../lib";
-import axios from "axios";
-
+import { register } from "../api/auth";
 const Sigin = () => {
-    useEffect(function () {
-        const form = document.querySelector("#form");
-        const username = document.querySelector("#username");
-        const password = document.querySelector("#password");
+    useEffect(() => {
+        const sform = document.querySelector("#form");
         const email = document.querySelector("#email");
-        
-        form.addEventListener("submit", function (e) {
+        const password = document.querySelector("#password");
+        sform.addEventListener("submit", async (e) => {
             e.preventDefault();
-            const projectAdd =
-            {
-                name: username.value,
-                password: password.value,
+            try {
+              const user = {
                 email: email.value,
+                password: password.value,
+              };
+              await register(user);
+              router.navigate("#/admin/login");
+              alert("Đăng ký thành công!");
+            } catch (error) {
+              alert("Đăng ký thất bại!");
+              console.log(error);
             }
-            console.log(projectAdd);
-            axios.post("http://localhost:3000/users", projectAdd)
-                .then(() => router.navigate("/admin/login"))
-                .catch(() => alert("Add to Fail !"))
-        })
-    })
+          });
+        });
+    
     return `
-                <form id="form" class="register-form">
-                <div class="register-container">
-                    <h2 class="register-title">Create an Account</h2>
-                    <div class="input-container">
-                    <input type="text" id="username" class="register-input" placeholder="Username" required>
-                    </div>
-                    <div class="input-container">
-                    <input type="email" id="email" class="register-input" placeholder="Email" required>
-                    </div>
-                    <div class="input-container">
-                    <input type="password" id="password" class="register-input" placeholder="Password" required>
-                    </div>
-                    <button type="submit" class="register-btn">Register</button>
-                    <div class="register-bottom-text">
-                    <span>Already have an account?</span>
-                    <a href="#" class="login-link">Log in</a>
-                    </div>
-                </div>
-                </form>
+    <form id="form" class="register-form">
+     <div class="register-container">
+        <h2 class="register-title">Create an Account</h2>
+        <div class="input-container">
+        <input type="email" id="email" class="register-input" placeholder="Email" required>
+        </div>
+        <div class="input-container">
+        <input type="password" id="password" class="register-input" placeholder="Password" required>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+        <div class="register-bottom-text">
+        <span>Already have an account?</span>
+        <a href="#admin/login" class="login-link">Log in</a>
+        </div>
+     </div>
+    </form>
 
   `
 }

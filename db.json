@@ -1,17 +1,6 @@
 {
   "APIproject": [
     {
-      "name": "SHOP FRESH",
-      "date": "12/5/2022",
-      "linkgit": "https://github.com/heyIamThoong/WebHtmlFresh",
-      "language": "HTML/CSS?JS",
-      "describe": "Khá là tuyệt",
-      "gallery": [
-        "https://res.cloudinary.com/ds97vobzg/image/upload/v1676929918/ECMA/obsqg9utmijyj9mjje2w.png"
-      ],
-      "id": 1
-    },
-    {
       "name": "FRUIT SHOP",
       "date": "20/5/2022",
       "linkgit": "https://github.com/heyIamThoong/WebHtmlCss",
@@ -35,72 +24,91 @@
     },
     {
       "name": "SHOP FOOD",
-      "date": "20/5/2022",
+      "date": "10-10-2022",
       "linkgit": "https://github.com/heyIamThoong/WebHtmlCss",
       "language": "HTML/CSS/JS",
-      "describe": "Độc đáo",
       "gallery": [
         "https://res.cloudinary.com/ds97vobzg/image/upload/v1676930176/ECMA/qa0iknyzfmf5udswgvhm.png"
       ],
+      "describe": "Độc đáo",
       "id": 5
     },
     {
-      "name": "DEIGO SHOP",
-      "date": "20/11/2022",
-      "linkgit": "https://github.com/heyIamThoong/DuAn1",
-      "language": "HTML/JS/PHP",
+      "name": "Sản phẩm 1",
+      "date": "10/10/22003",
+      "linkgit": "https://github.com/Dev-HongSonNguyen",
+      "language": "Js,php,css",
+      "describe": "tuyệt vời",
       "gallery": [
-        "https://res.cloudinary.com/ds97vobzg/image/upload/v1676930901/ECMA/dbj5tsmxqxendbitaxff.png"
+        "https://res.cloudinary.com/ds97vobzg/image/upload/v1677079880/ECMA/muihtzq8hay7v8q0rhag.png"
       ],
-      "describe": "Khá là tuyệt",
       "id": 6
     },
     {
-      "name": "DỰ ÁN MẪU",
-      "date": "20/5/2022",
-      "linkgit": "https://github.com/heyIamThoong/DuAnMau",
-      "language": "HTML/CS/PHP",
-      "describe": "Độc đáo",
-      "gallery": [
-        "https://res.cloudinary.com/ds97vobzg/image/upload/v1676931316/ECMA/l7tq1ilfyjytvcqyvqtd.png"
-      ],
-      "id": 7
+      "id": 7,
+      "name": "Sản phẩm 1",
+      "date": "2023-02-03",
+      "linkgit": "https://github.com/Dev-HongSonNguyen",
+      "language": "html,css,js",
+      "gallery": "https://res.cloudinary.com/dugodumc5/image/upload/v1677097241/MyCV/jf1ylria7vlr1ugmlees.png",
+      "describe": "tuyệt vời"
     }
   ],
   "contact": [
     {
       "name": "Lê Thông",
-      "email": "thongltph123@fpt.edu.vn",
-      "message": "Hello",
-      "id": 1
-    },
-    {
-      "name": "Lê Thông",
       "email": "thongltph2000@gmail.com",
-      "message": "AAA",
-      "id": 2
+      "message": "ứadasdasd",
+      "id": 1
     }
-   
-    
   ],
   "users": [
     {
-      "name": "Thong",
-      "password": "11111",
-      "email": "admin@gmail.com",
+      "email": "thongltph20702@fpt.edu.vn",
+      "password": "1234",
       "id": 1
     },
     {
-      "name": "thanhthong8x",
-      "password": "22222",
       "email": "thanhthong20038x@gmail.com",
+      "password": "$2a$10$LWynEumK5z5fRw2hB2E5Ru4ID1k8NfzK08b9xRmOYKfIohqsVanpa",
       "id": 2
     },
     {
-      "name": "Thong123",
-      "password": "1112222",
-      "email": "thong123@gmail.com",
+      "email": "thongltph203702@fpt.edu.vn",
+      "password": "$2a$10$cf7NEruZ2MV8sU/FDajIQuwKtX4SifYOP7zLHszxiAcOktnzxnx.K",
       "id": 3
+    },
+    {
+      "email": "thanhthong2008x@gmail.com",
+      "password": "$2a$10$wfASjKKWPgRGHmM6FteUn.gy55xpW76qIEVE580bUMs2Ra0hIo.za",
+      "id": 4
+    },
+    {
+      "email": "thongltph2002@fpt.edu.vn",
+      "password": "$2a$10$fdD1MR9xBxDl0N7mtZvYVeVJIEMhj.j5KpDiHm1JJDRNdQAxxKmKy",
+      "id": 5
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "name": "Home",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "name": "project",
+      "link": "#project"
+    },
+    {
+      "id": 3,
+      "name": "Contact",
+      "link": "#contact"
+    },
+    {
+      "id": 4,
+      "name": "Admin",
+      "link": "#/admin/login"
     }
   ],
   "images": [
@@ -131,6 +139,20 @@
         "https://res.cloudinary.com/ds97vobzg/image/upload/v1676933131/ECMA/aci309votgfyajiwrzom.jpg"
       ],
       "id": 5
+    }
+  ],
+  "information": [
+    {
+      "name": "Lê Thành Thông ",
+      "hocVan": "FPT Polytechnic",
+      "shill": "FontEnd Deverloper",
+      "language": "HTML/CS/JS/PHP",
+      "framework": "REACTJS,NODEJS",
+      "address": "Thanh Xuân , Hà Nội",
+      "phone": "0359210703",
+      "email": "thongltph20702@fpt.edu.vn",
+      "facebook": "https://www.facebook.com/thoongne.210703",
+      "id": 1
     }
   ]
 }
