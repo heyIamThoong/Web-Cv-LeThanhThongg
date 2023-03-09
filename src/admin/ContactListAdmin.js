@@ -40,7 +40,7 @@ const Contactlistadmin = ()=>{
             <td>${index+1}</td>
             <td>${item.name}</td>
             <td>${item.email}</td>
-            <td>${item.message}</td>
+            <td style="width:700px">${item.message}</td>
             <td>
             <button data-id=${item.id} class="bg-red-600 p-2 py-2 text-[#ffff] btn_delete">DELETE</button>
             </td>

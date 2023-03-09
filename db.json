@@ -52,20 +52,59 @@
       "language": "html,css,js",
       "gallery": "https://res.cloudinary.com/dugodumc5/image/upload/v1677097241/MyCV/jf1ylria7vlr1ugmlees.png",
       "describe": "tuyệt vời"
+    },
+    {
+      "name": "DEIGO SHOP",
+      "date": "2023-02-01",
+      "linkgit": "https://github.com/heyIamThoong/WebHtmlCss",
+      "language": "HTML/CSS/JS",
+      "describe": "Cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.",
+      "gallery": [
+        "https://res.cloudinary.com/ds97vobzg/image/upload/v1677129667/ECMA/xf6oh1hsfppi6qdcr0lo.png"
+      ],
+      "id": 8
+    },
+    {
+      "name": "DEIGO SHOP",
+      "date": "2023-02-01",
+      "linkgit": "https://github.com/heyIamThoong/WebHtmlCss",
+      "language": "HTML/CSS/JS",
+      "describe": "Cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.",
+      "gallery": [
+        "https://res.cloudinary.com/ds97vobzg/image/upload/v1677129718/ECMA/yvfkwbvst19q72t2ftph.png"
+      ],
+      "id": 9
+    },
+    {
+      "name": "Nho Tím Phú",
+      "date": "2023-02-09",
+      "linkgit": "https://github.com/heyIamThoong/WebHtmlFresh",
+      "language": "HTML/CSS/JS",
+      "describe": "cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.",
+      "gallery": [
+        "https://res.cloudinary.com/ds97vobzg/image/upload/v1677129882/ECMA/f9xdn0zefz60j0zptjkw.png"
+      ],
+      "id": 10
     }
   ],
   "contact": [
     {
-      "name": "Lê Thông",
-      "email": "thongltph2000@gmail.com",
-      "message": "ứadasdasd",
+      "name": "Thành Thông",
+      "email": "thong2000@gmail.com",
+      "message": "cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.\n\n",
       "id": 1
     },
     {
-      "name": "admin",
-      "email": "thong2000@gmail.com",
-      "message": "qw",
+      "name": "Nho Tím Phú",
+      "email": "nho2000@gmail.com",
+      "message": "cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.\n\n",
       "id": 2
+    },
+    {
+      "name": "DEIGO SHOP",
+      "email": "deigo123@gmail.com",
+      "message": "cung cấp cho người dùng một trải nghiệm mua sắm trực tuyến thuận tiện và đa dạng với hàng triệu sản phẩm đa dạng và giá cả phù hợp.\n\n",
+      "id": 3
     }
   ],
   "users": [

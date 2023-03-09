@@ -14,7 +14,6 @@ const MenuAdmin = () => {
             <li  class="nav-item"><a class="nav-link" id="nav" href="#/admin/projectListAdmin">Project</a></li>
             <li  class="nav-item"><a class="nav-link" id="nav" href="#/admin/information">Information</a></li>
             <li  class="nav-item"><a class="nav-link" id="nav" href="#/admin/contactlistadmin">Contact</a></li>
-            <li  class="nav-item"><a class="nav-link" id="nav" href="#/">ImageCV</a></li>
             <li  class="nav-item"><a class="nav-link" id="nav" href="#/">Logout</a></li>
             </ul>
           </div>
